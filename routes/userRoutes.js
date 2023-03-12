@@ -7,6 +7,7 @@ route.get("/protected-route", validateUser.isLoggedIn, (req, res) => {
   res.render("google_auth_success");
 });
 
+// login 
 route.get("/login-facebook", (req, res) => {
   res.send('<a href="/user/auth/google">Login with facebook</a>');
 });
